@@ -35,5 +35,13 @@ public class Main {
         System.out.println("Long Minimum Value = " + myMinLongValue);
 
         short bigShortLiteralValue = 32767;
+
+        int myTotal = (myMinIntValue/2);
+
+        //casting
+        //Java is giving always integer as a default
+        byte myNewByteValue = (byte) (myMinByteValue/2);
+
+        short myNewShortValue = (short) (myMinShortValue/2);
     }
 }
