@@ -26,7 +26,7 @@ public class CodeBlocks {
             System.out.println("Your final score was " + finalScore);
         };
 
-        
+
 
     }
 }
