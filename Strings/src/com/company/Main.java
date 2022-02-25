@@ -28,6 +28,6 @@ public class Main {
         System.out.println("LastString is equal to " + lastString);
 
         //Strings in Java are immutable.
-        // 
+        //
     }
 }
