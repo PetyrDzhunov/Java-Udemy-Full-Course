@@ -1,7 +1,7 @@
 package com.company;
 
 public class MegabytesConvertor {
-    public static void printMegaBytesAndKiloBytes(int kiloBytes) {
+    public void printMegaBytesAndKiloBytes(int kiloBytes) {
         if(kiloBytes < 0) {
             System.out.printf("Invalid Value");
         } else {
