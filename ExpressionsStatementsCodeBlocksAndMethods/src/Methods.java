@@ -8,8 +8,8 @@ public class Methods {
         System.out.println(score);
         System.out.println(score1);
 
-       int position = calculateHighScorePosition(1500);
-        displayHighScorePosition("Peter",position);
+        int position = calculateHighScorePosition(1500);
+        displayHighScorePosition("Peter", position);
 
     }
 
@@ -29,15 +29,15 @@ public class Methods {
     public static int calculateHighScorePosition(int score) {
         int position = 4;
 
-        if(score >=1000) {
-            position =1;
-        } else if (score >=500) {
-            position=2;
-        } else if (score >=100) {
+        if (score >= 1000) {
+            position = 1;
+        } else if (score >= 500) {
+            position = 2;
+        } else if (score >= 100) {
             position = 3;
         }
         return position;
 
-        }
     }
 }
+
