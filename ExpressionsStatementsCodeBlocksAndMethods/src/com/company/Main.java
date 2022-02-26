@@ -10,5 +10,8 @@ public class Main {
         if(highScore == 50) {
             System.out.println("This is an expression");
         };
+
+        MegabytesConvertor.printMegaBytesAndKiloBytes(2041);
+
     }
 }
