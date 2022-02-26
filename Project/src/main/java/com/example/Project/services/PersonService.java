@@ -1,15 +1,26 @@
 package com.example.Project.services;
 
 import com.example.Project.DTOS.PersonDTO;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
+@Service
 public class PersonService {
-    private List<PersonDTO> people;
 
-    public List<PersonDTO> getAllPeople(){
-       return people;
+    List<PersonDTO> people = new ArrayList<>();
+
+    public PersonService() {
+
     }
 
-    public createPerson(PersonDTO)
+    public List<PersonDTO> getAllPeople(){
+       return this.people;
+    }
+
+    public void createPerson(PersonDTO person) {
+      this.people.add(person);
+    }
 }
