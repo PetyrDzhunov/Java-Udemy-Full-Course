@@ -22,19 +22,30 @@ public class Main {
 
         // create a local class that implements that onClickListener interface
         // and assign an instance to our button;
-        class ClickListener implements Button.OnClickListener {
-            public ClickListener() {
-                System.out.println("I've been attached");
-            }
+//        class ClickListener implements Button.OnClickListener {
+//            public ClickListener() {
+//                System.out.println("I've been attached");
+//            }
+//
+//            @Override
+//            public void onClick(String title) {
+//                System.out.println(title + " was clicked");
+//            }
+//
+//        }
+//
+//        btnPrint.setOnClickListener(new ClickListener());
 
+        //anonymous class
+        btnPrint.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(String title) {
                 System.out.println(title + " was clicked");
             }
-
-        }
-
-        btnPrint.setOnClickListener(new ClickListener());
+        });
+        // the main difference between local and anonymous class is that
+        // with local we actually create and define a class and
+        // in anonymous we just implement it in a single scope block
         listen();
     }
 
