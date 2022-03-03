@@ -1,10 +1,17 @@
 package com.company;
 
 public interface ITelephone {
-    public void powerOn();
-    public void dial(int phoneNumber);
-    public void answer();
-    public boolean callPhone(int phoneNumber);
-    public boolean isRinging();
-    
+    void powerOn();
+
+    void dial(int phoneNumber);
+
+    void answer();
+
+    boolean callPhone(int phoneNumber);
+
+    boolean isRinging();
 }
+
+// defining the methods that a class that implements this interface should have.
+// unncessary to write an access modifiers because the class will implement the interface
+
